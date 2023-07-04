@@ -29,7 +29,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "References/1994-Dipole-spectrum.pdf",
+                "file": "Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "References/1994-Dipole-spectrum.pdf",
+                "file": "Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "References/1994-Dipole-spectrum.pdf"
+                "file": "Methodology.md"
               }
             }
           }
@@ -157,10 +158,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "475144d9a7ab790a",
+  "active": "319a3f67a3b4b7a4",
   "lastOpenFiles": [
-    "Methodology.md",
     "References/1994-Dipole-spectrum.pdf",
+    "Methodology.md",
     "References/1996-Dipole-observed.pdf",
     "References/1994-Measuring-CMB.pdf",
     "References/1994-Anisotropy in the cosmic microwave background.pdf",
