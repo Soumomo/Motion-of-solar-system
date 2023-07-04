@@ -10,3 +10,5 @@
 
 >derivative of planck function$$T_{amp} \frac{dB_v(T_{cmbr})}{dT} $$
 >Tcmbr=2.726 K best fit of Tamp = 3.343 +- 0.016 mK
+
+hello
