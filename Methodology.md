@@ -5,8 +5,9 @@ The data used in the analysis is from the `COBE-FIRAS`(Cosmic Background Explore
 
 * **The Intensity of radiation received at that pixel** : There are $182$ values of Intensities measured in MJy/sr, across a set of frequencies. This analysis only considers data in the low-frequency band ($60-630$ GHz)
 
-It is observed that all the pixels have $43$ workable intensity values. The data is fitted to a Planck Distribution spectrum for blackbodies$$ I(v,T) = \frac{2hv^3}{c^2(e^{\frac{hv}{kT}}-1)} $$
-There are 43 workable Frequency points for each pixel. The detector's initial captured frequency is $68.020812$ GHz with measuring interval of 13.604162$ GHz, putting the whole spectrum in the microwave region
+It is assumed that the Cosmic Microwave Background is a blackbody radiating EM waves from all directions, the relation of intensity of these radiations to its frequency was given by Max Planck. The data is fitted to the Planck Distribution spectrum:
+$$I(v,T) = \frac{2hv^3}{c^2(e^{\frac{hv}{kT}}-1)}$$
+There are 43 non-zero intensity points for each pixel. The detector's initial captured frequency is $68.020812$ GHz with measuring interval of 13.604162$ GHz, putting the whole spectrum in the microwave region
 
 Linear regression is used to fit the data, this leads to the acquiring of the Blackbody temperature($T_{obs}$) corresponding to that patch of the sky. 
 $$\chi^2 = \sum^N_i \frac{(I_{obs}-I_{theo})^2}{\sigma_i^2}$$
@@ -28,6 +29,7 @@ T_{obs}&= T_{cmbr}\frac{\sqrt{1-\frac{v}{c}}}{1-\frac{v}{c}cos\theta} \\
 
 \end{aligned}
 $$
+This result is taken from the phenomena of Relativistic Doppler Effect, where the observer is moving with respect to the source of the radiation. 
 
 First, we need to find the values $cos\theta$ from every pixel of the sky to the point of the highest temperature. 
 
@@ -80,5 +82,6 @@ Creating a suitable interval, a contour map is plotted to reveal the true values
 
 From the calculations done, the value of velocity is found out to be $386.8660 \pm 0.3574$ km/s and $T_{CMBR}$ to be $2.727756 \pm 0.000003$ K (95% CL)
 
-It is equally important to state the direction of the motion, so we turn back to $\chi^2$ analysis this time for only 1 parameter. 
+It is equally important to state the direction of the motion, so we turn back to $\chi^2$ analysis this time for only 1 parameter.  
 
+                        

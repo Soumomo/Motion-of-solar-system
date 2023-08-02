@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Methodology.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Methodology.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Methodology.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Methodology.md"
+                "file": "README.md"
               }
             }
           }
@@ -162,9 +162,9 @@
   },
   "active": "aa5e09cf5d85da94",
   "lastOpenFiles": [
-    "Pasted image 20230731171028.png",
-    "Motion of Solar System  and Galaxies through space.md",
     "Methodology.md",
+    "Motion of Solar System  and Galaxies through space.md",
+    "Pasted image 20230731171028.png",
     "Code/imp_data.py",
     "Code/FIRAS_C_VECTOR_LOWF.FITS",
     "References/1994-Dipole-spectrum.pdf",
