@@ -7,30 +7,28 @@ The data used in the analysis is from the `COBE-FIRAS`(Cosmic Background Explore
 
 It is assumed that the Cosmic Microwave Background is a blackbody radiating EM waves from all directions, the relation of intensity of these radiations to its frequency was given by Max Planck. The data is fitted to the Planck Distribution spectrum:
 $$I(v,T) = \frac{2hv^3}{c^2(e^{\frac{hv}{kT}}-1)}$$
-There are 43 non-zero intensity points for each pixel. The detector's initial captured frequency is $68.020812$ GHz with measuring interval of 13.604162$ GHz, putting the whole spectrum in the microwave region
+There are 43 non-zero intensity points for each pixel. The detector's initial captured frequency is $68.020812$ GHz with measuring interval of 13.604162$ GHz, putting the whole spectrum in the microwave region.
 
 Linear regression is used to fit the data, this leads to the acquiring of the Blackbody temperature($T_{obs}$) corresponding to that patch of the sky. 
 $$\chi^2 = \sum^N_i \frac{(I_{obs}-I_{theo})^2}{\sigma_i^2}$$
 Then, a temperature map is plotted to review our data and check for anisotropies. It is inferred that the Milky Way galaxy and the Cosmic Dust sorrounding it have caused abnormalities in the temperature values. This leads to our next step of removing the unnecessary Cosmic Dust spectra from our original data. 
 
-The FIRAS website has a corresponding dataset of the Cosmic Dust measured in the low-frequency range. These values are directly subtracted from our previous Intensity values to give us uncontaminated CMBR ejections. Upon running the regression again and finding the temperatures and plotting, we start seeing the dipole anisotropy of the CMB. To spot it clearly, it is important to remove the galactic emissions. This is done by cutting the data across the galactic equator ($|b|\le 20$)
+The FIRAS website has a corresponding dataset of the Cosmic Dust measured in the low-frequency range. These values are directly subtracted from our previous intensity values to give us uncontaminated CMBR emissions. Upon running the regression again and finding the temperatures and plotting, we start seeing the dipole anisotropy of the CMB. To spot it clearly, it is important to remove the galactic emissions. This is done by cutting the data across the galactic equator ($|b|\le 20$)
 
-Along with cutting the spectrum data, it is also apparent to cut the respective longitude/latitudes for correct plotting of data. We repeat the regression and plot the temperature map. This time, a clear and comprehensive temperature map is generated with the dipole visible. Taking the average of the temperatures: $T_{CMBR} =  2.727780 +- 0.000196$ K . Further down the analysis, we achieved an even better CMBR Temperature.
+Along with cutting the spectrum data, it is also apparent to cut the respective longitude/latitudes for correct plotting of data. We repeat the regression and plot the temperature map. This time, a clear and comprehensive temperature map is generated with the dipole visible. Taking the average of the temperatures: $T_{CMBR} =  2.727780 +- 0.000196$ K . Further down the analysis, we achieved an even better approximation.
 
 # Calculating Velocity of our Solar System
 
-The apparent background temperature of an observer moving with a velocity v with respect to the background radiation is of the form:
+We say that the solar system moves at some speed relative to the Cosmic Microwave Background. As per what is explained above , this motion of Earth causes us to read relatively more energetic EM waves of any source observed in the direction of our motion and relatively less energetic EM waves of any source observed in the direction opposite to our motion. This principle applies for the CMB radiation too. The apparent background temperature of an observer moving with a velocity v with respect to the background radiation is of the form{reference : 1968 paper}:
 $$
 \begin{aligned}
 
-T_{obs}&= T_{cmbr}\frac{\sqrt{1-\frac{v}{c}}}{1-\frac{v}{c}cos\theta} \\
+T_{obs}&= T_{cmbr}\frac{\sqrt{1-\frac{v^2}{c^2}}}{1-\frac{v}{c}cos\theta} \\
 \\
 &\approx T_{cmbr}(1+\frac{v}{c}cos\theta)
 
 \end{aligned}
 $$
-This result is taken from the phenomena of Relativistic Doppler Effect, where the observer is moving with respect to the source of the radiation. 
-
 First, we need to find the values $cos\theta$ from every pixel of the sky to the point of the highest temperature. 
 
 ## Finding the cosine of angles between the pixels:
@@ -83,5 +81,3 @@ Creating a suitable interval, a contour map is plotted to reveal the true values
 From the calculations done, the value of velocity is found out to be $386.8660 \pm 0.3574$ km/s and $T_{CMBR}$ to be $2.727756 \pm 0.000003$ K (95% CL)
 
 It is equally important to state the direction of the motion, so we turn back to $\chi^2$ analysis this time for only 1 parameter.  
-
-                        
