@@ -13,41 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Motion of Solar System  and Galaxies through space.md",
+                "file": "Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "aa5e09cf5d85da94",
+            "id": "e61f6ee060cf2117",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "doppler.md",
+                "file": "Protocol.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "d78c0621e0c26bf6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "References/1968-Anisotropy of primeval fireball.pdf"
-              }
-            }
-          },
-          {
-            "id": "a2d551cc715150c3",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "References/1994-Dipole-spectrum.pdf"
               }
             }
           }
@@ -118,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Protocol.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Protocol.md"
+              }
             }
           },
           {
@@ -171,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,22 +168,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b55ccf1291ec1696",
+  "active": "e61f6ee060cf2117",
   "lastOpenFiles": [
+    "Motion of Solar Systems and Galaxies through space-1.md",
+    "Code/Datasets/FIRAS_DUST_SPECTRUM_MAP_LOWF.FITS",
+    "Code/Datasets/FIRAS_DESTRIPED_SKY_SPECTRA_LOWF.FITS",
+    "Code/Datasets/FIRAS_C_VECTOR_LOWF.FITS",
+    "Code/Datasets",
+    "Code/Untitled Folder",
+    "Protocol.md",
     "Methodology.md",
+    "References/1994-Measuring-CMB.pdf",
+    "References/1994-Anisotropy in the cosmic microwave background.pdf",
+    "References/1996-Dipole-observed.pdf",
+    "References/1994-Dipole-spectrum.pdf",
     "Motion of Solar System  and Galaxies through space.md",
     "References/1968-Anisotropy of primeval fireball.pdf",
     "doppler.md",
-    "References/1994-Dipole-spectrum.pdf",
-    "References/1994-Anisotropy in the cosmic microwave background.pdf",
     "chivstemp.png",
     "chi2.png",
     "README.md",
-    "Pasted image 20230731171028.png",
-    "Code/imp_data.py",
-    "Code/FIRAS_C_VECTOR_LOWF.FITS",
-    "References/1996-Dipole-observed.pdf",
-    "References/1994-Measuring-CMB.pdf",
-    "References"
+    "Pasted image 20230731171028.png"
   ]
 }
